@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel booking</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+     
+      <form id="booking-form">
+        <p id="detail">Enter details for booking room.</p>
+        <p id="alert"></p>
+  <label>Name</label>
+  <input class="inputs" id="username" type="text" >
+  
+  <label>Check-in Date</label>
+  <input class="inputs" id="Check-in" type="date">
+  
+  <label>Check-out Date</label>
+  <input class="inputs" id="Check-out" type="date">
+  
+  <label>Guests</label>
+  <input class="inputs" id="guest" type="number" min="1" value="1">
+  
+  <button class="btn" type="submit">Book Now</button>
+
+    <p class="para" id="sure">Thankyou for booking here your details.</p>
+     <p class="para" id="name"></p>
+     <p class="para" id="check"></p>
+     <p class="para" id="out"></p>
+     <p class="para" id="quantity"></p>
+     <p class="para" id="good"> Sucessfully booking.</p>
+</form>
+
+    <script src="book.js"></script>
+</body>
+</html>

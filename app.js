@@ -12,18 +12,18 @@ menuToggle.addEventListener("click", () => {
 });
 
 login.addEventListener("click", function(){
-    window.location.assign("/Hotel/log-in/page.html");
+    window.location.assign("login.html");
 });
 
 register.addEventListener("click", function(){
-    window.location.assign("/Hotel/card/card.html");
+    window.location.assign("card.html");
 });
 
 hotel.addEventListener('click', function(){
-    window.location.assign("/Hotel/card/card.html");
+    window.location.assign("card.html");
 });
 
 explorebtn.addEventListener("click", function(){
-     window.location.assign("/Hotel/card/card.html");
+     window.location.assign("card.html");
 })
 

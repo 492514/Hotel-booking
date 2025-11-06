@@ -4,7 +4,7 @@
 }
 
 body{
-   background-image: url("/Hotel/images/hotel10.jpg");
+   background-image: url("images/hotel10.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* width height */

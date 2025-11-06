@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +6,11 @@
 }
 
 body {
-  /* You can enable this if needed:
-  background-image: url("hotel3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  */
+ 
   font-family: 'Arial', sans-serif;
   background-color: #f7f7f7;
 }
 
-/* ---------------------- MAIN HEADING ---------------------- */
 #choose {
   text-align: center;
   font-size: 2rem;
@@ -26,7 +20,6 @@ body {
   line-height: 1.4;
 }
 
-/* ---------------------- SEARCH BAR ---------------------- */
 .search-wrapper {
   position: relative;
   width: 300px;
@@ -58,7 +51,7 @@ body {
   pointer-events: none;
 }
 
-/* ---------------------- CARD DESIGN ---------------------- */
+
 .room-card {
   width: 300px;
   height: 270px;
@@ -107,7 +100,7 @@ body {
   background: #005596;
 }
 
-/* ---------------------- CARD CONTAINER ---------------------- */
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -116,9 +109,7 @@ body {
   padding: 20px;
 }
 
-/* ---------------------- RESPONSIVE STYLES ---------------------- */
 
-/* Medium Screens (Tablets) */
 @media (max-width: 1024px) {
   #choose {
     font-size: 1.8rem;
@@ -137,7 +128,7 @@ body {
   }
 }
 
-/* Small Screens (Mobiles) */
+
 @media (max-width: 768px) {
   #choose {
     font-size: 1.6rem;
@@ -182,7 +173,6 @@ body {
   }
 }
 
-/* Extra Small Devices (Phones <480px) */
 @media (max-width: 480px) {
   #choose {
     font-size: 1.3rem;

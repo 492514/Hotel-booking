@@ -1,13 +1,12 @@
-/* 🌐 RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🌅 BODY BACKGROUND */
 body {
-  background-image: url("/Hotel/images/hotel3.jpg");
+  background-image: url("images/hotel3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -15,7 +14,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* 🏠 MAIN CONTAINER */
+
 .container {
   width: 100%;
   height: auto;
@@ -24,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 
-/* 🧭 HEADER */
+
 header {
   height: 10vh;
   display: flex;
@@ -66,7 +65,6 @@ nav {
   background: #189ad3;
 }
 
-/* Hamburger icon */
 .menu-toggle {
   display: none;
   font-size: 2rem;
@@ -74,7 +72,7 @@ nav {
   cursor: pointer;
 }
 
-/* 🔑 LOGIN & BOOKING BUTTONS */
+
 #login, #registr {
   height: 40px;
   width: 95px;
@@ -102,7 +100,7 @@ nav {
   color: #005073;
 }
 
-/* 📝 MAIN TEXT */
+
 #written p {
   text-align: center;
   margin: 5rem auto;
@@ -112,7 +110,7 @@ nav {
   font-weight:bold;
 }
 
-/* ✈️ EXPLORE BUTTON */
+
 .explore {
   height: 5vh;
   width: 220px;
@@ -135,10 +133,10 @@ nav {
   transform: scale(1.05);
 }
 
-/* 🌀 SCROLLING SECTION */
 
 
-/* ---------------- SCROLL SECTION ---------------- */
+
+
 .container2 {
   width: 100%;
   overflow: hidden;
@@ -174,7 +172,7 @@ nav {
   }
 }
 
-/* ---------------- FOOTER ---------------- */
+
 footer {
   height: 20vh;
   width: 100%;
@@ -201,7 +199,7 @@ footer {
 }
 
 
-/* 📱 MEDIA QUERIES FOR RESPONSIVENESS */
+
 @media (max-width: 1024px) {
   #written {
     font-size: 1.4rem;
@@ -217,7 +215,7 @@ footer {
 
 
    nav {
-    display: none; /* hidden by default */
+    display: none; 
     flex-direction: column;
         backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -231,7 +229,7 @@ footer {
   }
 
   nav.active {
-    display: flex; /* show on toggle */
+    display: flex; 
   }
 
   .menu-toggle {
@@ -258,7 +256,7 @@ footer {
     margin: 2rem auto;
   }
   .scrolling-wrapper {
-    animation: scroll-left 25s linear infinite; /* ✅ keep animation ON */
+    animation: scroll-left 25s linear infinite; 
     flex-direction: row;
   }
 

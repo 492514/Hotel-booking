@@ -1,13 +1,13 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🌅 Background */
+
 body {
-  background-image: url("/Hotel/images/hotel10.jpg");
+  background-image: url("images/hotel10.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* 🧱 Main Container */
+
 .container {
   height: 60vh;
   width: 80vh;
@@ -32,7 +32,7 @@ body {
   align-items: center;
 }
 
-/* 🔤 Inputs */
+
 input {
   width: 50vh;
   color: white;
@@ -48,7 +48,7 @@ input::placeholder {
   color: rgb(238, 238, 238);
 }
 
-/* 🔘 Button */
+
 #btn {
   padding: 10px;
   width: 30vh;
@@ -69,14 +69,14 @@ input::placeholder {
   background-color: #003c7b;
 }
 
-/* ⚠️ Error / Info Text */
+
 #para {
   color: rgb(0, 0, 0);
   margin-top: 1.5rem;
   text-align: center;
 }
 
-/* ✅ Success Message */
+
 #paragraph {
   color: white;
   height: 60vh;
@@ -115,9 +115,7 @@ input::placeholder {
   display: none !important;
 }
 
-/* 📱 RESPONSIVE STYLES */
 
-/* Tablets and small laptops */
 @media (max-width: 1024px) {
   .container {
     width: 70vh;
@@ -133,7 +131,7 @@ input::placeholder {
   }
 }
 
-/* Mobiles (portrait) */
+
 @media (max-width: 768px) {
   body {
     background-size: cover;
@@ -170,7 +168,7 @@ input::placeholder {
   }
 }
 
-/* Extra small screens (phones <480px) */
+
 @media (max-width: 480px) {
   .container {
     width: 90%;

@@ -4,9 +4,10 @@
 }
 
 body{
-   background-image: url("hotel3.jpg");
+   background-image: url("/Hotel/images/hotel10.jpg");
   background-repeat: no-repeat;
-  background-size: 1300px 600px; /* width height */
+  background-position: center;
+  background-size: cover; /* width height */
   height: 100vh;
 }
 
@@ -21,7 +22,7 @@ body{
 
 #booking-form {
     max-width: 400px;
-    margin: 30px auto;
+    margin: 5rem auto;
     padding: 20px 25px;
     background: transparent;
     border-radius: 12px;

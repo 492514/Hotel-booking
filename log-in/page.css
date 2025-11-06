@@ -1,0 +1,197 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌅 Background */
+body {
+  background-image: url("/Hotel/images/hotel10.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 🧱 Main Container */
+.container {
+  height: 60vh;
+  width: 80vh;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔤 Inputs */
+input {
+  width: 50vh;
+  color: white;
+  font-size: larger;
+  border-radius: 8px;
+  background: #003c7b;
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 1.5rem;
+  padding: 10px;
+}
+
+input::placeholder {
+  color: rgb(238, 238, 238);
+}
+
+/* 🔘 Button */
+#btn {
+  padding: 10px;
+  width: 30vh;
+  margin-top: 2rem;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #007BFF;
+  background: #007BFF;
+  font-size: larger;
+  transition: 0.5s ease;
+}
+
+#btn:hover {
+  color: white;
+  transform: scale(1.03);
+  border: 2px solid #003c7b;
+  background-color: #003c7b;
+}
+
+/* ⚠️ Error / Info Text */
+#para {
+  color: rgb(0, 0, 0);
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* ✅ Success Message */
+#paragraph {
+  color: white;
+  height: 60vh;
+  padding: 16px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to right, #66bb6a, #43a047);
+  animation: slideFade 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+#paragraph::before {
+  top: 1px;
+  content: "✅ ";
+  font-size: 22px;
+  margin-right: 6px;
+  position: relative;
+}
+
+@keyframes slideFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+/* 📱 RESPONSIVE STYLES */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .container {
+    width: 70vh;
+    height: 55vh;
+  }
+
+  input {
+    width: 45vh;
+  }
+
+  #btn {
+    width: 25vh;
+  }
+}
+
+/* Mobiles (portrait) */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+
+  input {
+    width: 100%;
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  #btn {
+    width: 70%;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  #para {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  #paragraph {
+    height: auto;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* Extra small screens (phones <480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  #btn {
+    width: 80%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  #paragraph {
+    font-size: 0.9rem;
+    padding: 1.5rem;
+  }
+}

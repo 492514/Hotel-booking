@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -5,23 +6,27 @@
 }
 
 body {
-  /* background-image: url("hotel3.jpg");
+  /* You can enable this if needed:
+  background-image: url("hotel3.jpg");
   background-repeat: no-repeat;
-  background-size: 1300px 600px; /* width height */
-
+  background-size: cover;
+  background-position: center;
+  */
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
 }
 
-#choose{
+/* ---------------------- MAIN HEADING ---------------------- */
+#choose {
   text-align: center;
   font-size: 2rem;
   font-weight: bolder;
   color: #774900;
   margin-top: 20px;
-  font-family: 'Arial', sans-serif;
+  line-height: 1.4;
 }
 
-
-
+/* ---------------------- SEARCH BAR ---------------------- */
 .search-wrapper {
   position: relative;
   width: 300px;
@@ -53,6 +58,7 @@ body {
   pointer-events: none;
 }
 
+/* ---------------------- CARD DESIGN ---------------------- */
 .room-card {
   width: 300px;
   height: 270px;
@@ -63,21 +69,25 @@ body {
   background: white;
   transition: transform 0.3s ease;
 }
+
 .room-card:hover {
   transform: translateY(-5px);
 }
+
 .room-image {
   width: 100%;
   height: 85px;
   object-fit: cover;
 }
+
 .room-info {
   padding: 15px;
 }
+
 .room-info .price {
   font-size: 1.2em;
   font-weight: bold;
- color: #774900;
+  color: #774900;
 }
 
 .button {
@@ -90,21 +100,113 @@ body {
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
+
 .button:hover {
   background: #005596;
 }
 
-
+/* ---------------------- CARD CONTAINER ---------------------- */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  /* backdrop-filter: blur(8px); 
-    -webkit-backdrop-filter: blur(8px); */
   justify-content: center;
+  padding: 20px;
 }
 
+/* ---------------------- RESPONSIVE STYLES ---------------------- */
 
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  #choose {
+    font-size: 1.8rem;
+  }
 
+  .room-card {
+    width: 280px;
+    height: auto;
+  }
 
+  .button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 70%;
+  }
+}
+
+/* Small Screens (Mobiles) */
+@media (max-width: 768px) {
+  #choose {
+    font-size: 1.6rem;
+    margin: 10px;
+  }
+
+  .search-wrapper {
+    width: 80%;
+  }
+
+  .card-container {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .room-card {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .room-image {
+    height: 150px;
+  }
+
+  .room-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .room-info ul {
+    font-size: 0.9rem;
+  }
+
+  .room-info .price {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+  }
+}
+
+/* Extra Small Devices (Phones <480px) */
+@media (max-width: 480px) {
+  #choose {
+    font-size: 1.3rem;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 10px 35px 10px 12px;
+  }
+
+  .room-image {
+    height: 130px;
+  }
+
+  .room-info h3 {
+    font-size: 1rem;
+  }
+
+  .room-info ul li {
+    font-size: 0.85rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    width: 85%;
+  }
+}

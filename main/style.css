@@ -1,0 +1,288 @@
+/* 🌐 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌅 BODY BACKGROUND */
+body {
+  background-image: url("/Hotel/images/hotel3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 🏠 MAIN CONTAINER */
+.container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 1rem;
+  overflow-x: hidden;
+}
+
+/* 🧭 HEADER */
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid #9ad2dc;
+}
+
+#name {
+  color: #005073;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box {
+  height: 35px;
+  width: 88px;
+  color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  justify-content: center;
+  background: #005073;
+  border: 1px solid #005073;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  background: #189ad3;
+}
+
+/* Hamburger icon */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* 🔑 LOGIN & BOOKING BUTTONS */
+#login, #registr {
+  height: 40px;
+  width: 95px;
+  border-radius: 20px;
+  border: 1px solid #005073;
+}
+
+#login {
+  color: #005073;
+  background: transparent;
+}
+
+#login:hover {
+  color: white;
+  background-color: #005073;
+}
+
+#registr {
+  color: white;
+  background-color: #005073;
+}
+
+#registr:hover {
+  background: transparent;
+  color: #005073;
+}
+
+/* 📝 MAIN TEXT */
+#written p {
+  text-align: center;
+  margin: 5rem auto;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #000000;
+  font-weight:bold;
+}
+
+/* ✈️ EXPLORE BUTTON */
+.explore {
+  height: 5vh;
+  width: 220px;
+  margin: 5rem auto;
+  color: white;
+  display: flex;
+  font-weight: lighter;
+  border-radius: 25px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #005073;
+  border: 2px solid #005073;
+  transition: 0.3s ease;
+}
+
+.explore:hover {
+  background: #189ad3;
+  border: 2px solid #189ad3;
+  transform: scale(1.05);
+}
+
+/* 🌀 SCROLLING SECTION */
+
+
+/* ---------------- SCROLL SECTION ---------------- */
+.container2 {
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  margin-top: 15rem;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: scroll-left 25s linear infinite;
+  white-space: nowrap;
+}
+
+.scrolling-wrapper p {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #005073;
+  border: 1px solid #005073;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #005073;
+  font-weight: lighter;
+  font-size: small;
+  margin-top: 7rem;
+  border-radius: none;
+  gap: 2rem;
+}
+
+.foot {
+  color: whitesmoke;
+  font-size: large;
+  cursor: pointer;
+}
+
+.foot:hover {
+  text-decoration: underline;
+}
+
+
+/* 📱 MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 1024px) {
+  #written {
+    font-size: 1.4rem;
+  }
+  .explore {
+    width: 180px;
+
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+
+   nav {
+    display: none; /* hidden by default */
+    flex-direction: column;
+        backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: absolute;
+    top: 10vh;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    
+    
+  }
+
+  nav.active {
+    display: flex; /* show on toggle */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+ 
+ 
+
+  .scrolling-wrapper {
+    animation: scroll-left 25s linear infinite;
+  }
+
+  .scrolling-wrapper p {
+    font-size: 0.9rem;
+    margin: 0 10px;
+    padding: 8px 10px;
+  }
+  .box {
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+  #written {
+    font-size: 1.2rem;
+    margin: 2rem auto;
+  }
+  .scrolling-wrapper {
+    animation: scroll-left 25s linear infinite; /* ✅ keep animation ON */
+    flex-direction: row;
+  }
+
+  .scrolling-wrapper p {
+    font-size: 0.9rem;
+    margin: 0 15px;
+    padding: 8px 15px;
+  }
+}
+  footer {
+    justify-content: space-around;
+    font-size: 0.9rem;
+  }
+
+
+@media (max-width: 480px) {
+  #name {
+    font-size: 1.3rem;
+  }
+  .explore {
+    width: 150px;
+    font-size: 0.8rem;
+  }
+  #written {
+    font-size: 1rem;
+  }
+}
